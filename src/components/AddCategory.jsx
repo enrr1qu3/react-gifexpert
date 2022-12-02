@@ -5,6 +5,7 @@ export const AddCategory = ({ onNewCategory }) => {
   
   //Hook de estado 
   const[ inputValue, setInputValue ]= useState( '' );
+  //////////////////////////////////////////////////
 
   // Para reescribir y ver que se esta escribiendo en el input
   const onInputChange = ( e ) => {
@@ -15,6 +16,7 @@ export const AddCategory = ({ onNewCategory }) => {
     // reescribir el valor de inputValue con el nuevo valor colocado en el input 
     setInputValue( e.target.value );
   }
+  //////////////////////////////////////////////////////////////////////////////////
 
   // Para enviar lo que escribieron en el input
   const onSubmit = ( e ) => {
@@ -33,6 +35,7 @@ export const AddCategory = ({ onNewCategory }) => {
     // Reiniciar el input a un estado vacio 
     setInputValue('');
   }
+  ///////////////////////////////////////////////////////////////////////////////////
 
   return(
    <form onSubmit={ onSubmit }>
